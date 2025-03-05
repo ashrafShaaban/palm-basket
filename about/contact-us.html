@@ -13,120 +13,117 @@
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
-    <script type="text/javascript">
-    (function(){
-        emailjs.init({
-            publicKey: "Ahoazfxz1vKgFoIMB",
-        });
-    })();
-    </script>
+   <script type="text/javascript"
+   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+   emailjs.init({
+       publicKey: "Ahoazfxz1vKgFoIMB",
+   });
+})();
+</script>
     
 </head>
 <body>
 
     <!-- start header section -->
+    <section class="header ">
     
-    <header class="header">
-        <section class="flex">
-            <a href="home.html" class="logo">EdWeb</a>
-             
-            <form method="post" action="" class="search-form">
-             <input type="text" name="search-input" placeholder="search courses" required maxlength="100">
-             <button  type="submit" class="fas fa-search" name="search-button"></button>
-            </form>
-            <div class="icons">
-                <div id="menu-btn" class="fas fa-bars"></div>
-                <div id="search-btn" class="fas fa-search"></div>
-                <div id="user-btn" class="fas fa-user"></div>
-                <div id="toggle-btn" class="fas fa-sun"></div>
+        <div class="logo">
+           <a href="../index.html"> <img src="../imgs/logo.ico" /></a>
+        </div>
+        <div class="header-nav">
+            <ul>
+                <li><a href="../fashion.html">Fashion</a></li>
+                <li><a href="../storage&organization.html">storage & organization</a></li>
+                <li><a href="../kitchen.html">Kitchenware & tableware</a></li>
+                <li><a href="../decoration.html">decoration</a></li>
+                <li><a href="../furniture.html">furniture</a></li>
+                <li><a href="../baby&children.html">baby & children</a></li>
+           
+                <li class="dropdown"><a href="">about PalmBasket</a> <i class="fa-solid fa-chevron-down"></i>
+                  <ul class="sub-menu">
+                     <li>
+                        <a href="about-us.html">about us</a>
+                          
+                     </li>
+                     <li><a href="contact-us.html">contact us</a></li>
+                  </ul>
+                </li>
+    
+            </ul>
+            <button class="close-menu">X</button>
+        </div>
+        <div class="icons">
+            <div class="shop">
+                <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+                <span>0</span>
             </div>
+            <i class="fa-solid fa-bars" ></i>
+        </div>
+  
+        <div class="cart">
+            <h2 class="cart-title">Your cart</h2>
 
-         <div class="profile">
-            <img src="images/pic-1.jpg" alt=""/>
-            <h3>Ashraf Shaaban</h3>
-            <span>student</span>
-            <a href="profile.html" class="pro">view profile</a>
-            <div class="register">
-               <a href="login.html">login</a>
-               <a href="register.html">register</a>
-           </div>
-         </div>
-        </section>
+            <!-- cart-content -->
+            <div class="cart-content">
+             
+            </div>
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">0 EGP</div>
+            </div>
+            <!-- buy button -->
+            <button class="btn-buy">Buy Now</button>
+
+            <!-- cart-close -->
+            <i class="fa-solid fa-x" id="cart-close"></i>
+        </div>
         
-    </header>
-    <!-- end header section -->
-    <!-- start side bar section -->
-    <div class="side-bar">
-        <div class="closebtn">
-            <i class="fas fa-times"></i>
-        </div>
-        <div class="profile">
-            <img src="images/pic-1.jpg" alt=""/>
-            <h3>Ashraf Shaaban</h3>
-            <span>student</span>
-            <a href="profile.html" class="pro">view profile</a>
 
-        </div>
-            <nav class="bar">
-            <a href="home.html" ><i class="fas fa-home "></i><span>Home</span></a>
-            <a href="about.html" ><i class="fas fa-question fa-1x"></i><span>About us</span></a>
-            <a href="courses.html" ><i class="fas fa-graduation-cap"></i><span>Courses</span></a>
-            <a href="teachers.html" ><i class="fas fa-chalkboard-user"></i><span>Teachers</span></a>
-            <a href="contact.html" ><i class="fas fa-headphones"></i><span>Contact us</span></a>
-        </nav>
-    </div>
     
-    <!-- end side bar section -->
-
-    <!-- start contact section -->
+</section>
+  
+    <!-- end header section -->
     <section class="contact">
-      <div class="row">
-        <div class="image">
-            <img src="images/contact-img.svg" alt=""/>
-        </div>
-
-        <form action="" onsubmit="sendMail(); return false;" method="post" class="contact-form">
-            <h3>get in touch</h3>
+        <div class="contact-us">
+          <div class="image">
+              <img src="../imgs/contact-img.svg" alt=""/>
+          </div>
+  
+          <form action="" onsubmit="sendeMail(); return false;" method="post" class="contact-form">
+            <h3 data-i18n="gein">Get in touch</h3>
             <input type="text" id="name" name="name" placeholder="enter your name" required maxlength="100" class="cell" />
             <input type="email" id="email" name="email add" placeholder="enter your email" required maxlength="100" class="cell" />
             <input type="number" id="number" name="phone number" placeholder="enter your number" required maxlength="100" class="cell" />
             <textarea name="msg" id="message" cols="30" rows="30" placeholder="enter your message" class="cell" required maxlength="500"></textarea>
-            <button type="submit"   name="submit" value="send message" class="pro">Send</button>
+            <button type="submit"   name="submit" value="send message" class="pro">Send Message</button>
         </form>
-     </div>
-     <div class="box-container">
-        <div class="box">
-            <i class="fas fa-phone"></i>
-            <h3>phone number</h3>
+       </div>
 
-            <a href="tel:01123834122"> 011-2383-4122</a>
-            <a href="tel:01023829756"> 010-2382-9756</a>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-envelope"></i>
-            <h3>email address</h3>
-
-            <a href="mailto:ashrafshaaban37@gmail.com">ashrafshaaban37@gmail.com</a>
-            <a href="mailto:ashrafshabaan8@gmail.com">ashrafshabaan8@gmail.com</a>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-map-marker-alt"></i>
-            <h3>office address</h3>
-
-            <a href="#">flat no.2, 37 building, sofan street, 000bahteem, shoubra El-Kheima</a>
+         <div class="contact-container ">
             
-        </div>
-     </div>
-    </section>
+                <div class="box">
+                    <i class="fas fa-phone fa-2x"></i>
+                    <h4 data-i18n="phnu">phone number</h4>
+                    <a href="tel:01016096128" data-i18n="nu"> +20 101 609 6128</a>
+                </div>
+                <div class="box">
+                    <i class="fas fa-envelope fa-2x"></i>
+                    <h4 data-i18n="emad">email address</h4>
+                    <a href="sk@qzentrum.com">sk@qzentrum.com</a>
+                </div>
+           
+         </div>
+   </section>
+    <!-- start contact section -->
+  
     <!-- end contact section -->
 
-    <footer class="footer">
-        &copy; copyrights @ 2024 <span>Developer. Ashraf Shaaban</span> all rights reseved.
-    </footer>
+  
 
-    
-    <script src="../js/main.js" type="text/javascript"></script>
+   
+    <script src="../js/main.js" ></script>
 </body>
 </html>
