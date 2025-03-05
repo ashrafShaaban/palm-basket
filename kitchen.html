@@ -22,7 +22,7 @@
                     <li><a href="decoration.html">decoration</a></li>
                     <li><a href="furniture.html">furniture</a></li>
                     <li><a href="baby&children.html">baby & children</a></li>
-                    <li><a href="lighting.html">lighting</a></li>
+                    
                     <li class="dropdown"><a href="">about PalmBasket</a> <i class="fa-solid fa-chevron-down"></i>
                       <ul class="sub-menu">
                          <li>
@@ -37,13 +37,96 @@
                 <button class="close-menu">X</button>
             </div>
             <div class="icons">
-                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="shop">
+                    <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+                    <span>0</span>
+                </div>
                 <i class="fa-solid fa-bars" ></i>
+            </div>
+      
+            <div class="cart">
+                <h2 class="cart-title">Your cart</h2>
+
+                <!-- cart-content -->
+                <div class="cart-content">
+                 
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">0 EGP</div>
+                </div>
+                <!-- buy button -->
+                <button class="btn-buy">Buy Now</button>
+
+                <!-- cart-close -->
+                <i class="fa-solid fa-x" id="cart-close"></i>
             </div>
         
         
     </section>
    
-    <script src="js/main.js"></script>
+    <section class="featured ">
+        <h2>Featured Product</h2>
+        <div class="products">
+            <div class="product">
+                <img src="imgs/kitchanware/1.jpg">
+
+                    <h4 class="product-title">Half multipurpose plates</h4>
+                    <span class="product-price">75.00 EGP</span>
+                   <i class="fa-solid fa-cart-shopping add-cart"></i> 
+            </div>
+            <div class="product">
+                <img src="imgs/kitchanware/2.jpg">
+
+                    <h4 class="product-title">wooden cover</h4>
+                    <span class="product-price">120.00 EGP</span>
+                   <i class="fa-solid fa-cart-shopping add-cart"></i>  
+            </div>
+            <div class="product">
+                <img src="imgs/kitchanware/3.jpg">
+    
+                        <h4 class="product-title">nature plate table</h4>
+                        <span class="product-price">100.00 EGP</span>
+                       <i class="fa-solid fa-cart-shopping add-cart"></i> 
+            </div>
+            <div class="product">
+                <img src="imgs/kitchanware/4.jpg">
+
+                    <h4 class="product-title">cup stand</h4>
+                    <span class="product-price">50.00 EGP</span>
+                   <i class="fa-solid fa-cart-shopping add-cart"></i> 
+            </div>
+            <div class="product">
+                <img src="imgs/kitchanware/5.jpg">
+
+                    <h4 class="product-title">Half-crafted plate</h4>
+                    <span class="product-price">50.00 EGP</span>
+                   <i class="fa-solid fa-cart-shopping add-cart"></i> 
+            </div>
+            <div class="product">
+                <img src="imgs/kitchanware/6.jpg">
+
+                <h4 class="product-title">bold pops of color</h4>
+                <span class="product-price">50.00 EGP</span>
+               <i class="fa-solid fa-cart-shopping add-cart"></i> 
+            </div>
+            <div class="product">
+                <img src="imgs/kitchanware/7.jpg">
+
+                <h4 class="product-title">blue plate</h4>
+                <span class="product-price">50.00 EGP</span>
+               <i class="fa-solid fa-cart-shopping add-cart"></i> 
+            </div>
+            <div class="product">
+                <img src="imgs/kitchanware/8.jpg">
+
+                <h4 class="product-title">myaz</h4>
+                    <span class="product-price">50.00 EGP</span>
+                   <i class="fa-solid fa-cart-shopping add-cart"></i> 
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/main.js" ></script>
 </body>
 </html>

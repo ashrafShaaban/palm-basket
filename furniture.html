@@ -22,7 +22,7 @@
                     <li><a href="decoration.html">decoration</a></li>
                     <li><a href="furniture.html">furniture</a></li>
                     <li><a href="baby&children.html">baby & children</a></li>
-                    <li><a href="lighting.html">lighting</a></li>
+                
                     <li class="dropdown"><a href="">about PalmBasket</a> <i class="fa-solid fa-chevron-down"></i>
                       <ul class="sub-menu">
                          <li>
@@ -37,13 +37,95 @@
                 <button class="close-menu">X</button>
             </div>
             <div class="icons">
-                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="shop">
+                    <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+                    <span>0</span>
+                </div>
                 <i class="fa-solid fa-bars" ></i>
             </div>
-        
+      
+            <div class="cart">
+                <h2 class="cart-title">Your cart</h2>
+
+                <!-- cart-content -->
+                <div class="cart-content">
+                 
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">0 EGP</div>
+                </div>
+                <!-- buy button -->
+                <button class="btn-buy">Buy Now</button>
+
+                <!-- cart-close -->
+                <i class="fa-solid fa-x" id="cart-close"></i>
+            </div>
         
     </section>
    
-    <script src="js/main.js"></script>
+    <section class="featured ">
+        <h2>Featured Product</h2>
+        <div class="products">
+            <div class="product">
+                <img src="imgs/furniture/1.png">
+
+                    <h4 class="product-title">Bed</h4>
+                    <span class="product-price">75.00 EGP</span>
+                   <i class="fa-solid fa-cart-shopping add-cart"></i> 
+            </div>
+            <div class="product">
+                <img src="imgs/furniture/2.jpg">
+
+                    <h4 class="product-title">wooden table</h4>
+                    <span class="product-price">120.00 EGP</span>
+                   <i class="fa-solid fa-cart-shopping add-cart"></i>  
+            </div>
+            <div class="product">
+                <img src="imgs/furniture/3.jpg">
+    
+                        <h4 class="product-title">low chair</h4>
+                        <span class="product-price">100.00 EGP</span>
+                       <i class="fa-solid fa-cart-shopping add-cart"></i> 
+            </div>
+            <div class="product">
+                <img src="imgs/furniture/4.jpg">
+
+                    <h4 class="product-title">Eco-friendly fashion</h4>
+                    <span class="product-price">50.00 EGP</span>
+                   <i class="fa-solid fa-cart-shopping add-cart"></i> 
+            </div>
+            <div class="product">
+                <img src="imgs/furniture/5.jpg">
+
+                    <h4 class="product-title">furn</h4>
+                    <span class="product-price">50.00 EGP</span>
+                   <i class="fa-solid fa-cart-shopping add-cart"></i> 
+            </div>
+            <div class="product">
+                <img src="imgs/furniture/6.jpg">
+
+                <h4 class="product-title">basket</h4>
+                <span class="product-price">50.00 EGP</span>
+               <i class="fa-solid fa-cart-shopping add-cart"></i> 
+            </div>
+            <div class="product">
+                <img src="imgs/furniture/7.png">
+
+                <h4 class="product-title">two bed</h4>
+                <span class="product-price">50.00 EGP</span>
+               <i class="fa-solid fa-cart-shopping add-cart"></i> 
+            </div>
+            <div class="product">
+                <img src="imgs/furniture/8.jpg">
+
+                <h4 class="product-title">handmade carpet</h4>
+                    <span class="product-price">50.00 EGP</span>
+                   <i class="fa-solid fa-cart-shopping add-cart"></i> 
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/main.js" ></script>
 </body>
 </html>

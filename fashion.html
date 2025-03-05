@@ -3,13 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fashion</title>
+    <title>Palm Basket</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "Ahoazfxz1vKgFoIMB",
+        });
+    })();
+    </script>
 </head>
 <body>
-    <section class="header section-m">
+    <section class="header ">
     
             <div class="logo">
                <a href="index.html"> <img src="imgs/logo.ico" /></a>
@@ -23,6 +33,7 @@
                     <li><a href="furniture.html">furniture</a></li>
                     <li><a href="baby&children.html">baby & children</a></li>
                     <li><a href="lighting.html">lighting</a></li>
+                    
                     <li class="dropdown"><a href="">about PalmBasket</a> <i class="fa-solid fa-chevron-down"></i>
                       <ul class="sub-menu">
                          <li>
@@ -37,13 +48,96 @@
                 <button class="close-menu">X</button>
             </div>
             <div class="icons">
-                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="shop">
+                    <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+                    <span>0</span>
+                </div>
                 <i class="fa-solid fa-bars" ></i>
             </div>
-        
+      
+            <div class="cart">
+                <h2 class="cart-title">Your cart</h2>
+
+                <!-- cart-content -->
+                <div class="cart-content">
+                 
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">0 EGP</div>
+                </div>
+                <!-- buy button -->
+                <button class="btn-buy">Buy Now</button>
+
+                <!-- cart-close -->
+                <i class="fa-solid fa-x" id="cart-close"></i>
+            </div>
+            
+  
         
     </section>
-   
-    <script src="js/main.js"></script>
+    <section class="featured ">
+        <h2>Featured Product</h2>
+        <div class="products">
+            <div class="product">
+                <img src="imgs/fashion/images (1).jpg">
+
+                    <h4 class="product-title">white bag</h4>
+                    <span class="product-price">75.00 EGP</span>
+                   <i class="fa-solid fa-cart-shopping add-cart"></i> 
+            </div>
+            <div class="product">
+                <img src="imgs/fashion/images (2).jpg">
+
+                    <h4 class="product-title">offwhite bags</h4>
+                    <span class="product-price">120.00 EGP</span>
+                   <i class="fa-solid fa-cart-shopping add-cart"></i>  
+            </div>
+            <div class="product">
+                <img src="imgs/fashion/images (3).jpg">
+    
+                        <h4 class="product-title">Grey bag</h4>
+                        <span class="product-price">100.00 EGP</span>
+                       <i class="fa-solid fa-cart-shopping add-cart"></i> 
+            </div>
+            <div class="product">
+                <img src="imgs/fashion/images (4).jpg">
+
+                    <h4 class="product-title">yellow bag</h4>
+                    <span class="product-price">50.00 EGP</span>
+                   <i class="fa-solid fa-cart-shopping add-cart"></i> 
+            </div>
+            <div class="product">
+                <img src="imgs/fashion/images.jpg">
+
+                    <h4 class="product-title">green bag</h4>
+                    <span class="product-price">50.00 EGP</span>
+                   <i class="fa-solid fa-cart-shopping add-cart"></i> 
+            </div>
+            <div class="product">
+                <img src="imgs/fashion/beach.jpg">
+
+                <h4 class="product-title">beach bag</h4>
+                <span class="product-price">50.00 EGP</span>
+               <i class="fa-solid fa-cart-shopping add-cart"></i> 
+            </div>
+            <div class="product">
+                <img src="imgs/fashion/trkz.jpg">
+
+                <h4 class="product-title">outing bag</h4>
+                <span class="product-price">50.00 EGP</span>
+               <i class="fa-solid fa-cart-shopping add-cart"></i> 
+            </div>
+            <div class="product">
+                <img src="imgs/fashion/ticog bag.jpg">
+
+                <h4 class="product-title">ticog bag</h4>
+                    <span class="product-price">50.00 EGP</span>
+                   <i class="fa-solid fa-cart-shopping add-cart"></i> 
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/main.js" ></script>
 </body>
 </html>

@@ -130,9 +130,9 @@ function change_Handler(){
     }
     this.value =Math.floor(this.value);
 
+  update();
 
-
-    update();
+    
 }
 function update_total_price(){
     let cartBoxes=document.querySelectorAll(".cart-box");
@@ -154,7 +154,7 @@ function update_total_price(){
        
     })
 
-    cartTotalprice.innerHTML =  Total + "EGP" ;
+    cartTotalprice.innerHTML =  Total + "EGP"  ;
     
     // itemArr.push(productsobj);
 
